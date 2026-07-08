@@ -5,6 +5,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Ensure a single React instance (guards against duplicate-copy hook errors).
+  resolve: { dedupe: ["react", "react-dom"] },
   fmt: {},
   lint: {
     plugins: ["react", "typescript", "oxc"],
