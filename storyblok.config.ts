@@ -11,7 +11,10 @@ export default defineConfig({
       path: "./src/storyblok",
     },
     types: {
-      path: "./src/storyblok",
+      generate: {
+        strict: true,
+        path: "./src/storyblok",
+      },
     },
   },
 });

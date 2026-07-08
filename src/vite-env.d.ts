@@ -4,10 +4,7 @@ interface ViteTypeOptions {
   // strictImportMetaEnv: unknown
 }
 
-interface ImportMetaEnv {
-  readonly VITE_STORYBLOK_DELIVERY_API_TOKEN: string;
-  readonly VITE_STORYBLOK_REGION: string;
-}
+interface ImportMetaEnv {}
 
 interface ImportMeta {
   readonly env: ImportMetaEnv;

@@ -1,22 +1,12 @@
-import { StoryblokComponent, storyblokEditable, useStoryblok } from "@storyblok/react";
-import type { Page } from "./storyblok/types/293691708305852/storyblok-components";
-
 function App() {
-  const story = useStoryblok("home", {
-    version: "draft",
-  });
-
-  if (!story?.content) {
-    return <div>Loading...</div>;
-  }
-
-  const content = story.content as Page;
-
   return (
-    <main {...storyblokEditable(story.content)}>
-      {content.body?.map((nestedBlok, index) => (
-        <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid || index} />
-      ))}
+    <main className="grid min-h-dvh place-items-center p-8 text-center">
+      <div>
+        <h1 className="text-xl font-semibold">Storyblok Editor Playground</h1>
+        <p className="mt-2 opacity-70">
+          Clean slate — v1 (editor zero-config tree renderer) coming next.
+        </p>
+      </div>
     </main>
   );
 }

@@ -1,5 +1,5 @@
 {
-  "name": "storyblok-website-demo",
+  "name": "storyblok-editor-playground",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -13,7 +13,7 @@
     "build": "tsc -b && vp build",
     "lint": "vp lint",
     "preview": "vp preview",
-    "prepare": "vp config"
+    "prepare": "vp config --no-hooks"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",

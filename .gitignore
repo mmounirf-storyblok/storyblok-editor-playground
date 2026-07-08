@@ -27,3 +27,5 @@ dist-ssr
 !.vscode/extensions.json
 
 .env
+# Vite+ commit hooks (disabled)
+.vite-hooks
